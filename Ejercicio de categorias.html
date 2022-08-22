@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script></script>    
+</head>
+<body>
+    <div class="container">
+        <div class="my-5"></div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Administrador de categorías</h2>
+            </div>
+        </div>
+        <div class="my-5"></div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Agregar categorías</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="category" class="form-label">Categoría</label>
+                                <input  id="categoryInput" type="text" class="form-control" id="category" placeholder="Escribir el nombre de la categoría">
+                            </div>
+                            <button type="button" class="btn btn-success" id="saveCategory" onclick= "addCategory()" >Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+                                <div class="my-5"></div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card mb-4 rounded-3 shadow-sm">
+                                            <div class="card-header py-3">
+                                                <h4 class="my-0 fw-normal">Listar categorías</h4>
+                                            </div>
+                                            <ul id="categoryList" class="list-group list-group-flush" id="categoryList">
+                                                <li class="list-group-item">Automóviles</li>
+                                                <li class="list-group-item">Herramientas</li>
+                                                <li class="list-group-item">Mascotas</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </div>
+        <div class="my-5"></div>
+    </div>
+<script>
+
+let category_list=[]
+
+function addCategory(){
+    alert("voy a agregar");
+    let category= document.getElementById("categoryInput").value
+    if(category!=''){
+    category_list.push(category)
+    printCategories();
+}
+ 
+
+
+}
+console.log(categoryList)
+
+function printCategories(){
+    removeAll()
+    let lista =document.getElementById("categoryList")
+    for (let i=0; i< categoryList.length; i+0; ) {
+        const element = categoryList[i]; 
+        let =li document.createElement("li")
+        li.id=i;
+        li.className="list-group-item"
+        li.textContent= liText
+        lista.appendChild(li)
+    }
+  
+    function removeAll(){
+        let lista =document.getElementById("categoryList")
+        lista.innerHTML=""
+    }
+}
+
+</script>
+
+
+</body>
+</html>

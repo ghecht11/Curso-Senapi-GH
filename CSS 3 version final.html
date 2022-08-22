@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <style>
+    
+    <style>
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+article {
+    grid-area: article;
+}
+section {
+    grid-area: ads;
+}
+
+footer {
+    grid-area: footer;
+}
+.contenedor {
+  display: grid;
+  grid-template-areas: 
+      "header header header"
+      "nav article ads"
+      "nav article ads"
+      "nav footer footer";
+  grid-template-rows: 50px 200px 50px 50px;
+  grid-template-columns: 150px 1fr 150px;
+}
+
+.color {
+background-color: orange;
+color: white;
+margin: 5px;
+}
+
+@media(max-width: 450px ) {
+.contenedor {
+  display: grid;
+  grid-template-areas: 
+      "header"
+      "ads"
+      "article "
+      "footer ";
+  grid-template-rows: 150px 150px 150px 150px;
+  grid-template-columns: 70%;
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+
+
+}
+nav {
+display: none;
+}
+}
+</style>
+<body class="contenedor">
+<header class="color">
+<span>Header</span>
+</header>
+<nav class="color">
+<span> Nav </span>
+</nav>
+<article class="color">
+<span> article</span>
+</article>
+<section class="color">
+<span> ads</span>
+</section>
+<footer class="color">
+<span>footer</span>
+</footer>
+
+
+
+
+<div class="contenedor"></div>
+</body>
+
+</body>
+
+</html>

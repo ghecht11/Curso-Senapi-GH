@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Grid css 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            Body {
+                display:grid;
+                grid-template-areas:"header header header header"
+                                    "nav article section"
+                                    "nav footer footer";
+                grid-template-columns:2fr 7fr 1fr;
+                grid-template-rows: 1fr 7fr 1fr;
+                gap: 8px;
+               
+                text-align:center;
+                
+
+
+            }
+
+            header {
+                grid-area: header;
+                background-color:aqua;
+                
+            }
+           
+            nav {
+                grid-area: nav;
+                background-color:rgb(0, 255, 55);
+            }  
+            
+            article {
+                grid-area: article;
+                background-color:rgb(223, 219, 35);
+            }  
+            
+            section {
+                grid-area: section;
+                background-color:rgb(56, 59, 59);
+            }  
+            
+            footer {
+                grid-area: footer;
+                background-color:rgb(216, 126, 42);
+            }
+        </style>
+
+    </head>    
+        <body>
+            <header>Header</header>
+            <Nav>Nav</Nav>
+            <Article>Article</Article>
+            <section>Ads</section>
+            <footer>Footer</footer>
+        </body>  
+        
+</html>    
+
+

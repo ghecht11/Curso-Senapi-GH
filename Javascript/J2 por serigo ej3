@@ -1,0 +1,21 @@
+console.log("Ejercicio 11")
+
+let estaturasQ = 5;
+let suma =0;
+let estaturasCm = [];
+
+for (let i=0; i<estaturasQ; i++ ){
+    let altura = prompt("Cual es tu altura");
+    if(!isNaN(altura))   
+    { estaturasCm.push (altura) }
+    
+
+}
+console.log(estaturasCm)
+
+for (let i=0; i<estaturasCm.lenght; i++){
+    suma = suma + parseInt (estaturasCm[i]);
+}
+
+console.log(estaturasCm.lenght);
+

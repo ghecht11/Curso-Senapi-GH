@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Grid css 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            Body {
+                display:grid;
+                grid-template-areas:"header header"
+                                    " main aside "
+                                    " article sectiom "
+                                    " footer footer "
+                                    
+                                   ;
+                grid-template-columns: 60% 40%;
+                grid-template-rows: 15% 45% 30% 10%;
+                gap: 10px;
+               height: 100%;
+                text-align:center;
+                
+
+
+            }
+
+            header {
+                grid-area: header;
+                background-color:aqua;
+                
+            }
+           
+            main {
+                grid-area: main;
+                background-color:rgb(0, 255, 55);
+            }  
+            
+            aside {
+                grid-area: aside;
+                background-color:rgb(223, 219, 35);
+            }  
+            
+            section {
+                grid-area: section;
+                background-color:rgb(56, 59, 59);
+            }  
+            
+            article {
+                grid-area: article;
+                background-color:rgb(216, 42, 42);
+            }
+
+       
+            footer {
+                grid-area: footer;
+                background-color:rgb(42, 112, 216);
+            }
+        </style>
+
+    </head>    
+        <body>
+            <header>header</header>
+            <main>main.content</main>
+            <aside>sidebar</aside>
+            <Article>Twin 1</Article>
+            <section>Twin 2</section>
+            <footer>Footer</footer>
+        </body>  
+        
+</html>    
+
+
